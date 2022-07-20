@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-$font-family-sans-serif: 'Nunito Sans', sans-serif;
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
 
 $primary: #2596BE;
 $secondary: #384750;
@@ -13,12 +13,12 @@ $dark: #000a18;
 
 
 $dropdown-link-hover-bg: #deecf1;
-$dropdown-link-active-bg: #c8e4f8;
+$dropdown-link-active-bg: #d4e5fa;
 $dropdown-link-active-color: $dark;
 
 $input-btn-focus-width: 2px;
 
-$btn-border-radius: 14px;
+$btn-border-radius: 30px;
 $btn-border-radius-sm: 10px;
 $btn-border-radius-lg: 30px;
 
