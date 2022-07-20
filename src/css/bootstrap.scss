@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+$font-family-sans-serif: 'Nunito Sans', sans-serif;
+
+$primary: #2596BE;
+$secondary: #384750;
+$success: #1EA896;
+$warning: #FFE0A3;
+$info: #AFECFA;
+$danger: #FF7573;
+$light: #f6f6f6;
+$dark: #000a18;
+
+
+$dropdown-link-hover-bg: #deecf1;
+$dropdown-link-active-bg: #c8e4f8;
+$dropdown-link-active-color: $dark;
+
+$input-btn-focus-width: 2px;
+
+$btn-border-radius: 14px;
+$btn-border-radius-sm: 10px;
+$btn-border-radius-lg: 30px;
+
+$min-contrast-ratio: 3;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
