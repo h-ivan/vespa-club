@@ -24,4 +24,13 @@ $btn-border-radius-lg: 30px;
 
 $min-contrast-ratio: 3;
 
+
+
+//CUSTOM STYLES
+
+.nav-link:hover {
+  color: $dark !important;
+}
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
