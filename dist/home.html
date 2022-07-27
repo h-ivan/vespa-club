@@ -10,46 +10,49 @@
 </head>
 <body>
 
-<!-- NAVBAR START -->
+<!-- LOGIN NAV START -->
+<div class="bg-light">
+    <div class="hstack gap-3 container py-2">
+        <a class="link-primary ms-auto" href="#">Accedi</a>
+        <a class="link-primary" href="#">Registrati</a>
+    </div>
+</div>
+<hr class="mt-0 mb-2">
+<!-- LOGIN NAV END -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg navbar-light mb-2">
     <div class="container-fluid container justify-content-between">
-        <a class="navbar-brand text-white" href="#">VespaClub</a>
+        <a class="navbar-brand" href="#">VespaClub</a>
         <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
                 class="navbar-toggler"
                 data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end ms-lg-5" id="navbarNavDropdown">
-            <ul class="navbar-nav gap-lg-5 gap-1">
-                <li class="nav-item text-center">
-                    <a aria-current="page" class="nav-link text-center text-white" href="#">Scrizioni</a>
+        <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+            <ul class="navbar-nav gap-lg-5 ms-auto gap-1 px-4 rounded-3">
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Veicoli Certificati</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-center text-white " href="#">Registro Veicoli</a>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Assicurazioni agevolate</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-center text-white" href="#">Annunci</a>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Annunci</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-center text-white" href="#">Download</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-center text-white" href="#">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-center text-white active" href="#">Accedi</a>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Contratti</a>
                 </li>
             </ul>
+            <button class="btn btn-primary ms-auto">Certifica ora</button>
         </div>
     </div>
 </nav>
-
 <!-- NAVBAR END -->
 
 <!-- CAROUSEL START -->
-
 <div class="carousel slide" data-bs-ride="false" id="carouselExampleCaptions">
+
     <div class="carousel-indicators">
         <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
                 data-bs-target="#carouselExampleCaptions" type="button"></button>
@@ -57,8 +60,15 @@
                 type="button"></button>
         <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions"
                 type="button"></button>
+        <div class="carousel-caption text-start">
+            <h1>A Big Title</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+            <button class="btn btn-primary px-5 py-3 bg-dark opacity-75">CTA Button</button>
+        </div>
     </div>
+
     <div class="carousel-inner">
+
         <div class="carousel-item active">
             <img alt="..." class="d-block w-100" src="./img/carousel-img-1.jpeg">
         </div>
@@ -78,20 +88,15 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-
-
 <!-- CAROUSEL END -->
 
 <!-- FORM START -->
 <div class="container mt-4 w-25">
 
 </div>
-
 <!-- FORM END -->
 
 <div class="container">
-
-
     <div class="flex row gap-4 my-4">
         <!-- MAIN CONTENT CARD START-->
         <div class="card" style="width: 280px">

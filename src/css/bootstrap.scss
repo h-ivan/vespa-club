@@ -28,8 +28,10 @@ $min-contrast-ratio: 3;
 
 //CUSTOM STYLES
 
-.nav-link:hover {
+.nav-item:hover {
   color: $dark !important;
+  background: $light !important;
+  border-radius: $btn-border-radius !important;
 }
 
 
