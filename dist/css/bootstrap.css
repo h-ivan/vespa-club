@@ -6,6 +6,52 @@
   border-radius: 30px !important;
 }
 
+.hero-text {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #fff;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .hero-subtitle {
+    font-size: 1rem !important;
+  }
+  .hero-title {
+    font-size: 1.3rem !important;
+  }
+  .btn-responsive {
+    font-size: 80% !important;
+  }
+  .h-scroll-card-banner {
+    min-height: 200px !important;
+    max-width: 280px !important;
+  }
+}
+@media (max-width: 425px) {
+  .h-scroll-card-banner {
+    min-height: 200px !important;
+    max-width: 90% !important;
+    margin: 0 auto;
+  }
+}
+.home-card {
+  width: 300px !important;
+}
+
+.h-scroll-card {
+  min-height: 200px !important;
+  min-width: 380px !important;
+  margin-right: 20px;
+}
+
+.h-scroll-card-banner {
+  min-height: 200px !important;
+  min-width: 250px !important;
+  margin-right: 20px;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

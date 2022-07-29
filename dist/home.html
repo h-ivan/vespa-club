@@ -51,8 +51,16 @@
 <!-- NAVBAR END -->
 
 <!-- CAROUSEL START -->
-<div class="carousel slide" data-bs-ride="false" id="carouselExampleCaptions">
-
+<div class="carousel slide mb-5" data-bs-ride="false" id="carouselExampleCaptions">
+    <div class="container">
+        <div class="hero-text text-start d-flex flex-column">
+            <h1 class="mb-md-4 mb-sm-3 hero-title">A Big Title</h1>
+            <h2 class="mb-md-5 mb-sm-3 hero-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+            <button class="btn btn-responsive btn-lg align-self-start btn-primary">
+                CTA Button
+            </button>
+        </div>
+    </div>
     <div class="carousel-indicators">
         <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
                 data-bs-target="#carouselExampleCaptions" type="button"></button>
@@ -60,15 +68,9 @@
                 type="button"></button>
         <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions"
                 type="button"></button>
-        <div class="carousel-caption text-start">
-            <h1>A Big Title</h1>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-            <button class="btn btn-primary px-5 py-3 bg-dark opacity-75">CTA Button</button>
-        </div>
     </div>
 
     <div class="carousel-inner">
-
         <div class="carousel-item active">
             <img alt="..." class="d-block w-100" src="./img/carousel-img-1.jpeg">
         </div>
@@ -79,117 +81,163 @@
             <img alt="..." class="d-block w-100" src="./img/carousel-img-1.jpeg">
         </div>
     </div>
-    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button">
-        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button">
-        <span aria-hidden="true" class="carousel-control-next-icon"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
+
 </div>
 <!-- CAROUSEL END -->
 
-<!-- FORM START -->
-<div class="container mt-4 w-25">
-
-</div>
-<!-- FORM END -->
-
+<!-- MAIN CONTENT START -->
 <div class="container">
-    <div class="flex row gap-4 my-4">
-        <!-- MAIN CONTENT CARD START-->
-        <div class="card" style="width: 280px">
-            <img alt="" class="card-img-top py-2" src="https://via.placeholder.com/500">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a class="btn btn-primary" href="#">Go somewhere</a>
-            </div>
-        </div>
-        <!-- MAIN CONTENT CARD END-->
-        <!-- MAIN CONTENT CARD START-->
-        <div class="card" style="width: 280px">
-            <img alt="" class="card-img-top py-2" src="https://via.placeholder.com/500">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a class="btn btn-primary" href="#">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 280px">
-            <img alt="" class="card-img-top py-2" src="https://via.placeholder.com/500">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a class="btn btn-primary" href="#">Go somewhere</a>
-            </div>
-        </div>
-        <!-- MAIN CONTENT CARD END-->
-    </div>
-
-    <!-- SOCIO CARD START-->
-    <div class="card w-50">
-        <h5 class="card-header">
-            Verifica la validità di una Tessera
-        </h5>
-        <div class="card-body">
-            <form>
-                <div class="mb-3">
-                    <label class="form-label" for="input-socio">Numero socio</label>
-                    <input aria-describedby="input-socio" class="form-control" id="input-socio" type="text">
+    <section class="mb-4">
+        <div class="row justify-content-around">
+            <!-- CARD START-->
+            <div class="card home-card col-lg-4 col-md-12 mb-5">
+                <div class="card-body text-center">
+                    <h4 class="card-title">A Subtitle</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod rutrum
+                        blandit. Suspendisse vestibulum pellentesque sem.</p>
+                    <a class="btn btn-primary" href="#">Certifica Ora</a>
                 </div>
-                <button class="btn btn-primary" type="submit">Verifica</button>
-            </form>
+            </div>
+            <!-- CARD END-->
+            <!-- CARD START-->
+            <div class="card home-card col-lg-4 col-md-12 mb-5">
+                <div class="card-body text-center">
+                    <h4 class="card-title">A Subtitle</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod rutrum
+                        blandit. Suspendisse vestibulum pellentesque sem.</p>
+                    <a class="btn btn-primary" href="#">Scopri Di Piu</a>
+                </div>
+            </div>
+            <!-- CARD START-->
+            <div class="card home-card col-lg-4 col-md-12 mb-5">
+                <div class="card-body text-center">
+                    <h4 class="card-title">A Subtitle</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod rutrum
+                        blandit. Suspendisse vestibulum pellentesque sem.</p>
+                    <a class="btn btn-primary" href="#">Rinnova Tessera</a>
+                </div>
+            </div>
+            <!-- CARD END-->
+            <!-- CARD START-->
+            <div class="card home-card col-lg-4 col-md-12 mb-5">
+                <div class="card-body text-center">
+                    <h4 class="card-title">A Subtitle</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod rutrum
+                        blandit. Suspendisse vestibulum pellentesque sem.</p>
+                    <a class="btn btn-primary" href="#">Certifica Ora</a>
+                </div>
+            </div>
+            <!-- CARD END-->
+            <!-- CARD START-->
+            <div class="card home-card col-lg-4 col-md-12 mb-5">
+                <div class="card-body text-center">
+                    <h4 class="card-title">A Subtitle</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod rutrum
+                        blandit. Suspendisse vestibulum pellentesque sem.</p>
+                    <a class="btn btn-primary" href="#">Certifica Ora</a>
+                </div>
+            </div>
+            <!-- CARD END-->
         </div>
-    </div>
-    <!-- SOCIO CARD END-->
+    </section>
 
+    <!-- HORIZONTAL CARDS SECTION START-->
+    <section class="mb-5">
+        <h3 class="font-weight-light">Ultime Notizie</h3>
+        <div class="container-fluid py-2 overflow-scroll">
+            <div class="d-flex flex-row flex-nowrap mb-3">
+                <div class="card h-scroll-card p-4">
+                    <h4 class="card-title">A Subtitle</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod rutrum
+                        blandit. Suspendisse vestibulum pellentesque sem.</p>
+                    <a class="card-link" href="#">Legi Tutto ></a>
+                </div>
+                <div class="card h-scroll-card p-4">
+                    <h4 class="card-title">A Subtitle</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod rutrum
+                        blandit. Suspendisse vestibulum pellentesque sem.</p>
+                    <a class="card-link" href="#">Legi Tutto ></a>
+                </div>
+                <div class="card h-scroll-card p-4">
+                    <h4 class="card-title">A Subtitle</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod rutrum
+                        blandit. Suspendisse vestibulum pellentesque sem.</p>
+                    <a class="card-link" href="#">Legi Tutto ></a>
+                </div>
+                <div class="card h-scroll-card p-4">
+                    <h4 class="card-title">A Subtitle</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod rutrum
+                        blandit. Suspendisse vestibulum pellentesque sem.</p>
+                    <a class="card-link" href="#">Legi Tutto ></a>
+                </div>
+                <div class="card h-scroll-card p-4">
+                    <h4 class="card-title">A Subtitle</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod rutrum
+                        blandit. Suspendisse vestibulum pellentesque sem.</p>
+                    <a class="card-link" href="#">Legi Tutto ></a>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <a class="btn btn-primary" href="#">Tutte Le Notizie</a>
+        </div>
+    </section>
+    <!-- HORIZONTAL CARDS SECTION END-->
+
+    <!-- BANNER CARDS SECTION START-->
+    <section class="mb-4">
+        <div class="row justify-content-around">
+            <div class="card h-scroll-card-banner p-4 col-lg-3 col-md-4 mb-5">
+                <img alt="" class="m-auto" height="200" src="https://via.placeholder.com/250" width="200">
+            </div>
+            <div class="card h-scroll-card-banner p-4 col-lg-3 col-md-4 mb-5">
+                <img alt="" class="m-auto" height="200" src="https://via.placeholder.com/250" width="200">
+            </div>
+            <div class="card h-scroll-card-banner p-4 col-lg-3 col-md-4 mb-5">
+                <img alt="" class="m-auto" height="200" src="https://via.placeholder.com/250" width="200">
+            </div>
+        </div>
+    </section>
+    <!-- BANNER CARDS SECTION END-->
 </div>
-
+<!-- MAIN CONTENT END -->
 
 <!-- FOOTER START -->
-<footer class="text-center text-white bg-secondary">
+<footer class="text-white bg-secondary">
     <div class="container">
         <section class="mt-5">
-            <div class="row text-center d-flex justify-content-center pt-5">
-                <div class="col-md-2">
-                    <h6 class="font-weight-bold">
-                        <a class="text-white" href="#">Scrizioni</a>
-                    </h6>
+            <div class="row d-flex justify-content-center pt-5">
+                <div class="col-md-3">
+                    <img alt="" class="m-auto" height="150" src="https://via.placeholder.com/150" width="150">
                 </div>
-                <div class="col-md-2">
-                    <h6 class="font-weight-bold">
+                <div class="col-md-3 mt-2">
+                    <h6 class="font-weight-bold d-flex flex-column gap-3">
                         <a class="text-white" href="#">Registro Veicoli</a>
+                        <a class="text-white" href="#">Vespa Tecnica</a>
+                        <a class="text-white" href="#">Mercatino Annunci</a>
+                        <a class="text-white" href="#">Associati</a>
                     </h6>
                 </div>
-                <div class="col-md-2">
-                    <h6 class="font-weight-bold">
-                        <a class="text-white" href="#">Annunci</a>
-                    </h6>
-                </div>
-                <div class="col-md-2">
-                    <h6 class="font-weight-bold">
+                <div class="col-md-3  mt-2">
+                    <h6 class="font-weight-bold d-flex flex-column gap-3">
                         <a class="text-white" href="#">Download</a>
+                        <a class="text-white" href="#">Articoli</a>
+                        <a class="text-white" href="#">Contratti</a>
                     </h6>
                 </div>
-                <div class="col-md-2">
-                    <h6 class="font-weight-bold">
-                        <a class="text-white" href="#">Shop</a>
+                <div class="col-md-3 mt-2">
+                    <h6 class="font-weight-bold d-flex flex-column gap-3">
+                        <a class="text-white" href="#">Registro Veicoli</a>
+                        <a class="text-white" href="#">Vespa Tecnica</a>
+                        <a class="text-white" href="#">Mercatino Annunci</a>
+                        <a class="text-white" href="#">Associati</a>
                     </h6>
                 </div>
-                <div class="col-md-2">
-                    <h6 class="font-weight-bold">
-                        <a class="text-white" href="#">Accedi</a>
-                    </h6>
-                </div>
+
             </div>
         </section>
         <hr class="my-5"/>
-        <section class="mb-5">
+        <section class="mb-5 text-center">
             <div class="row d-flex justify-content-center">
                 <p>
                     Vespaclub.com - Ufficialmente iscritto al CONI 111019 e FMI 7320 - PI:04340280264 CF:91029550265

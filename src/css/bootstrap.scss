@@ -25,7 +25,6 @@ $btn-border-radius-lg: 30px;
 $min-contrast-ratio: 3;
 
 
-
 //CUSTOM STYLES
 
 .nav-item:hover {
@@ -34,5 +33,56 @@ $min-contrast-ratio: 3;
   border-radius: $btn-border-radius !important;
 }
 
+.hero-text {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #fff;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .hero-subtitle {
+    font-size: 1rem !important;
+  }
+
+  .hero-title {
+    font-size: 1.3rem !important;
+  }
+
+  .btn-responsive {
+    font-size: 80% !important;
+  }
+
+  .h-scroll-card-banner {
+    min-height: 200px !important;
+    max-width: 280px !important;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .h-scroll-card-banner {
+    min-height: 200px !important;
+    max-width: 90% !important;
+    margin: 0 auto;
+  }
+}
+
+.home-card {
+  width: 300px !important;
+}
+
+.h-scroll-card {
+  min-height: 200px !important;
+  min-width: 380px !important;
+  margin-right: 20px;
+}
+
+.h-scroll-card-banner {
+  min-height: 200px !important;
+  min-width: 250px !important;
+  margin-right: 20px;
+}
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
