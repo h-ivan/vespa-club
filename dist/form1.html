@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <link href="../node_modules/@chenfengyuan/datepicker/dist/datepicker.min.css" rel="stylesheet">
+
+    <title>Vespa Club Home</title>
+</head>
+<body>
+
+<!-- LOGIN NAV START -->
+<div class="bg-light">
+    <div class="hstack gap-3 container py-2">
+        <a class="link-primary ms-auto" href="#">Accedi</a>
+        <a class="link-primary" href="#">Registrati</a>
+    </div>
+</div>
+<hr class="mt-0 mb-2">
+<!-- LOGIN NAV END -->
+
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg navbar-light mb-2">
+    <div class="container-fluid container justify-content-between">
+        <a class="navbar-brand" href="#">VespaClub</a>
+        <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+            <ul class="navbar-nav gap-lg-5 ms-auto gap-1 px-4 rounded-3">
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Veicoli Certificati</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Assicurazioni agevolate</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Annunci</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Contratti</a>
+                </li>
+            </ul>
+            <button class="btn btn-primary ms-auto">Certifica ora</button>
+        </div>
+    </div>
+</nav>
+<!-- NAVBAR END -->
+
+<!-- MAIN CONTENT START -->
+<div class="container">
+    <h1 class="form-heading">
+        Iscriviti al club
+    </h1>
+    <ul class="nav nav-pills nav-tabs border-bottom-0 mb-5" id="myTab" role="tablist">
+        <li class="step bg-step" role="presentation">
+            <div aria-controls="step-1" aria-selected="true" class="step disabled active" data-bs-target="#step-1"
+                 data-bs-toggle="tab"
+                 id="step-1-tab" role="tab" type="button">I tuoi dati
+            </div>
+        </li>
+        <li class="step" role="presentation">
+            <div aria-controls="step-2" aria-selected="false" class="step disabled" data-bs-target="#step-2"
+                 data-bs-toggle="tab"
+                 id="step-2-tab" role="tab" type="button">Scegli la tessera
+            </div>
+        </li>
+        <li class="step" role="presentation">
+            <div aria-controls="step-3" aria-selected="false" class="step disabled" data-bs-target="#step-3"
+                 data-bs-toggle="tab"
+                 id="step-3-tab" role="tab" type="button">Concludi
+            </div>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div aria-labelledby="step-1-tab" class="tab-pane fade show active" id="step-1" role="tabpanel">
+            <h2 class="form-subheading">Dati Anagrafici</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <label class="form-label" for="nome">Nome</label>
+                    <input aria-describedby="name" class="form-control" id="nome" type="text">
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <label class="form-label" for="cognome">Cognome</label>
+                    <input aria-describedby="cognome" class="form-control" id="cognome" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="d-flex flex-column">
+                        <label class="mb-2" for="select-1">Citta di Nascita</label>
+                        <select class="select-1" id="select-1" name="select-1">
+                            <option></option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="d-flex flex-column">
+                        <label class="mb-2" for="select-2">Commune di Nascita</label>
+                        <select class="select-1" id="select-2" name="select-2">
+                            <option></option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="d-flex flex-column">
+                        <label class="mb-2" for="datepicker">Data di nascita</label>
+                        <div class="input-group mb-3 date-input">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text h-100 calendar-icon-container">
+                                    <img alt="calendar" height="16" src="./img/icons/calendar.svg" width="16">
+                                </span>
+                            </div>
+                            <input class="form-control" data-toggle="datepicker" id="datepicker">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="d-flex flex-column">
+                        <label class="mb-2" for="select-3">Sesso</label>
+                        <select class="select-1" id="select-3" name="select-3">
+                            <option></option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 d-flex">
+                    <div class="flex-grow-1 me-4 mb-4">
+                        <label class="form-label" for="codice">Codice Fiscale</label>
+                        <input aria-describedby="codice fiscale" class="form-control" id="codice" type="text">
+                    </div>
+                    <button class="btn btn-secondary codice-btn">Genera Codice Fiscale</button>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="d-flex flex-column">
+                        <label class="mb-2" for="select-4">Cittadinanza</label>
+                        <select class="select-1" id="select-4" name="select-4">
+                            <option></option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="form-subheading">Residenza</h2>
+                <div class="col-md-6 d-flex mb-4">
+                    <div class="w-75 me-4">
+                        <label class="form-label" for="indirizzo">Codice Fiscale</label>
+                        <input aria-describedby="indirizzo" class="form-control" id="indirizzo" type="text">
+                    </div>
+                    <div class="w-25 flex-grow-1 mb-4">
+                        <label class="form-label" for="number">N.</label>
+                        <input aria-describedby="number" class="form-control" id="number" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="d-flex flex-column">
+                        <label class="mb-2" for="select-5">Citta di Nascita</label>
+                        <select class="select-1" id="select-5" name="select-5">
+                            <option></option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="d-flex flex-column">
+                        <label class="mb-2" for="select-6">Commune di Nascita</label>
+                        <select class="select-1" id="select-6" name="select-6">
+                            <option></option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <div class="">
+                        <label class="form-label" for="cap">Cap</label>
+                        <input aria-describedby="cap" class="form-control" id="cap" type="text">
+                    </div>
+                </div>
+            </div>
+            <h2 class="form-subheading">Dati Di Contatto</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <label class="form-label" for="cellulare">Cellulare</label>
+                    <input aria-describedby="cellulare" class="form-control" id="cellulare" type="text">
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <label class="form-label" for="email">Email</label>
+                    <input aria-describedby="email" class="form-control" id="email" type="email">
+                </div>
+            </div>
+            <h2 class="form-subheading">Dati Di Accesso</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <label class="form-label" for="password">Password</label>
+                    <input aria-describedby="password" class="form-control" id="password" type="password">
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <label class="form-label" for="password-2">Conferma Password</label>
+                    <input aria-describedby="password-confirm" class="form-control" id="password-2" type="password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex flex-row justify-content-end">
+                    <button class="btn btn-secondary py-2 px-5">Continua</button>
+                </div>
+            </div>
+        </div>
+        <div aria-labelledby="step-2-tab" class="tab-pane fade" id="step-2" role="tabpanel">2</div>
+        <div aria-labelledby="step-3-tab" class="tab-pane fade" id="step-3" role="tabpanel">3</div>
+    </div>
+</div>
+<!-- MAIN CONTENT END -->
+
+<!-- FOOTER START -->
+<footer class="text-white bg-secondary">
+    <div class="container">
+        <section class="mt-5">
+            <div class="row d-flex justify-content-center pt-5">
+                <div class="col-md-3">
+                    <img alt="" class="m-auto" height="150" src="https://via.placeholder.com/150" width="150">
+                </div>
+                <div class="col-md-3 mt-2">
+                    <h6 class="font-weight-bold d-flex flex-column gap-3">
+                        <a class="text-white" href="#">Registro Veicoli</a>
+                        <a class="text-white" href="#">Vespa Tecnica</a>
+                        <a class="text-white" href="#">Mercatino Annunci</a>
+                        <a class="text-white" href="#">Associati</a>
+                    </h6>
+                </div>
+                <div class="col-md-3  mt-2">
+                    <h6 class="font-weight-bold d-flex flex-column gap-3">
+                        <a class="text-white" href="#">Download</a>
+                        <a class="text-white" href="#">Articoli</a>
+                        <a class="text-white" href="#">Contratti</a>
+                    </h6>
+                </div>
+                <div class="col-md-3 mt-2">
+                    <h6 class="font-weight-bold d-flex flex-column gap-3">
+                        <a class="text-white" href="#">Registro Veicoli</a>
+                        <a class="text-white" href="#">Vespa Tecnica</a>
+                        <a class="text-white" href="#">Mercatino Annunci</a>
+                        <a class="text-white" href="#">Associati</a>
+                    </h6>
+                </div>
+
+            </div>
+        </section>
+        <hr class="my-5"/>
+        <section class="mb-5 text-center">
+            <div class="row d-flex justify-content-center">
+                <p>
+                    Vespaclub.com - Ufficialmente iscritto al CONI 111019 e FMI 7320 - PI:04340280264 CF:91029550265
+                </p>
+            </div>
+        </section>
+        <section class="text-center mb-5">
+            <a class="me-4 text-decoration-none" href="">
+                <img alt="facebook" height="32" src="./img/icons/facebook.svg" style="filter: invert(100%);" width="32">
+            </a>
+            <a class="me-4 text-decoration-none" href="">
+                <img alt="instagram" height="32" src="./img/icons/instagram.svg" style="filter: invert(100%);"
+                     width="32">
+            </a>
+            <a class="me-4 text-decoration-none" href="">
+                <img alt="twitter" height="32" src="./img/icons/twitter.svg" style="filter: invert(100%);" width="32">
+            </a>
+        </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a class="text-white" href="#">vespaclub.com</a>
+    </div>
+</footer>
+<!-- FOOTER END -->
+
+
+</body>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="../node_modules/@chenfengyuan/datepicker/dist/datepicker.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.select-1').select2({
+            placeholder: "- Seleciona -"
+        });
+
+        $('[data-toggle="datepicker"]').datepicker();
+    });
+</script>
+</html>

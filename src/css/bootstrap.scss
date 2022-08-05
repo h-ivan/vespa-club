@@ -41,6 +41,80 @@ $min-contrast-ratio: 3;
   z-index: 999;
 }
 
+.home-card {
+  width: 300px !important;
+}
+
+.h-scroll-card {
+  min-height: 200px !important;
+  min-width: 380px !important;
+  margin-right: 20px;
+}
+
+.h-scroll-card-banner {
+  min-height: 200px !important;
+  min-width: 250px !important;
+  margin-right: 20px;
+}
+
+
+.form-heading {
+  margin: 50px 0;
+}
+
+.form-subheading {
+  margin-bottom: 20px;
+}
+
+.step {
+  padding: 8px 30px;
+  margin-right: 10px;
+  border-radius: 20px;
+  cursor: default !important;
+}
+
+.bg-step {
+  background: $primary;
+  color: white;
+}
+
+.select2 {
+  width: 100% !important;
+}
+
+.select-1 {
+  padding: 20px 0;
+}
+
+.date-input {
+  width: 100%;
+}
+
+.calendar-icon-container {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.select2-selection__rendered {
+  line-height: 35px !important;
+}
+.select2-container .select2-selection--single {
+  height: 38px !important;
+}
+.select2-selection__arrow {
+  height: 38px !important;
+}
+
+.select2-selection--single {
+  border: 1px solid #ced4da !important;
+}
+
+.codice-btn {
+  margin-top: 6px;
+  height: 38px;
+  align-self: center;
+}
+
 @media (max-width: 768px) {
   .hero-subtitle {
     font-size: 1rem !important;
@@ -58,31 +132,34 @@ $min-contrast-ratio: 3;
     min-height: 200px !important;
     max-width: 280px !important;
   }
+
+  .date-input {
+    width: 100% !important;
+  }
+
+  .codice-btn {
+    align-self: end !important;
+  }
+
+  .step {
+    padding: 5px 6px !important;
+    border-radius: 10px;
+  }
+
 }
 
 @media (max-width: 425px) {
-
   .h-scroll-card-banner {
     min-height: 200px !important;
     max-width: 90% !important;
     margin: 0 auto;
   }
-}
 
-.home-card {
-  width: 300px !important;
-}
+  .step {
+    font-size: 14px;
+    margin-right: 2px;
+  }
 
-.h-scroll-card {
-  min-height: 200px !important;
-  min-width: 380px !important;
-  margin-right: 20px;
-}
-
-.h-scroll-card-banner {
-  min-height: 200px !important;
-  min-width: 250px !important;
-  margin-right: 20px;
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
