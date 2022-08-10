@@ -45,6 +45,10 @@ $min-contrast-ratio: 3;
   width: 300px !important;
 }
 
+.dashboard-card {
+  width: 40% !important
+}
+
 .h-scroll-card {
   min-height: 200px !important;
   min-width: 380px !important;
@@ -146,6 +150,10 @@ $min-contrast-ratio: 3;
     border-radius: 10px;
   }
 
+  .dashboard-card {
+    width: 100% !important;
+  }
+
 }
 
 @media (max-width: 425px) {
@@ -159,7 +167,15 @@ $min-contrast-ratio: 3;
     font-size: 14px;
     margin-right: 2px;
   }
-
+  .card-2 {
+    flex-direction: column !important;
+  }
 }
+
+.sidebar {
+  min-width: 150px !important;
+}
+
+
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
